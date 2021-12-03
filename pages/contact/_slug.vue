@@ -1,14 +1,22 @@
 <template>
-  <div>
-    <h1>{{ this.about }}</h1>
-    <p>Path: {{ $route.path }}</p>
-  </div>
+  <v-main>
+    <v-container>
+      <h1>{{ contactInfo.title }}</h1>
+      <section>
+        <ul>
+          <li>Contact Number: {{ contactInfo.number }}</li>
+          <li>Address: {{ contactInfo.address }}</li>
+          <li>Address: {{ contactInfo.address }}</li>
+        </ul>
+      </section>
+      <section>
+        <nuxt-content :document="contactInfo" />
+      </section>
+    </v-container>
+  </v-main>
 </template>
 <script>
-  export default {
-    async asyncData({ params }) {
-      const about = params.about
-      return { about }
-    },
-  }
+export default {
+  props: ["contactInfo"],
+};
 </script>

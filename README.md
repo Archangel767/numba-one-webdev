@@ -2,7 +2,7 @@
 
 - Web Dev Fall 2021
 - Instructor: [Ashlyn Knox](https://github.com/lilyx13)
-- Links: [Github Repo Link](https://github.com/Icahpv/numba-one-webdev.git) || [Netlify Link]()
+- Links: [Github Repo Link](https://github.com/Icahpv/numba-one-webdev.git) || [Netlify Link](https://numbaonewebdev.netlify.app)
 
 ## About the website
 
@@ -43,11 +43,16 @@ Web Development website.
 
 ### Problem
 
-
+1. The background that we are using was supposed to be a splash page but ended up being a background because it keeps sticking to the other pages.
 
 
 ## Attributions
 > Instructions: For pictures, we need the image link, author link and website link.
+
+1. [Icah's article Photo](https://www.pexels.com/photo/woman-in-red-long-sleeve-shirt-sitting-on-chair-3783716/) by [Andrea Piacquadio](https://www.pexels.com/@olly) from [Pexels](https://www.pexels.com/)
+2. [GitHub Icon](https://www.flaticon.com/premium-icon/github_3291695?term=github&page=1&position=1&page=1&position=1&related_id=3291695&origin=search) by [riajulislam](https://www.flaticon.com/authors/riajulislam) from [Flaticon](https://www.flaticon.com/)
+3. [Cool website article photo](https://www.pexels.com/photo/person-coding-on-a-macbook-pro-4974912/) by [Olia Danilevich](https://www.pexels.com/@olia-danilevich) from [Pexels](https://www.pexels.com/)
+4. [Animate.css](https://animate.style/): Home page animation
 
 
 

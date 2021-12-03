@@ -1,67 +1,79 @@
 <template>
-<div>
-  <Header :pageInfo="siteInfo" />
-  <header>
-    <h1> {{ siteInfo.pageName }}</h1>
-    <main class="grid-box">
-      <Cards v-for="topic in topics" :key="topic.id" :info="topic" />
-    </main>
-  </header>
-</div>
+  <div>
+    <Header :pageInfo="siteInfo" />
+    <header>
+      <h1>{{ siteInfo.pageName }}</h1>
+      <main class="grid-box">
+      <div class="theones">
+        <main class="flex justify-evenly gap-y-16 flex-wrap p-10">
+          <Card
+            :pageInfo="siteInfo"
+            v-for="card in profiles"
+            :key="card.id"
+            :info="card"/>
+        </main>
+      </div>
+      </main>
+    </header>
+  </div>
 </template>
 
 <script>
 export default {
-  data () {
+  data() {
     return {
       siteInfo: {
-        pageName: "Card Gallery",
+        pageName: "The Ones",
         author: "numbaone",
       },
-      topics: [
+      profiles: [
         {
-          title: "I'm",
-          description: "Danger 5 meme",
-          img: "images/chuckle.jpeg"
+          img: "images/icah.png",
+          account: "https://github.com/Icahpv",
+          image: "assets/images/icah.png",
+          title: "I'm Icah",
+          description:
+            "Aspiring pro front end developer. When I'm not in front of my computer, I enjoy hiking, walking my dog, having tea or coffee and eating chocolate. Trying to live life to the fullest!",
         },
         {
-          title: "Too",
-          description: "Danger 5 meme",
-          img: "images/chuckle.jpeg"
+          image: "assets/images/chris.png",
+          title: "I'm Chris",
+          img: "images/chris.png",
+          account: "https://github.com/13retonnian" ,
+          description: 
+            "Has the power of invisibility but only when no one is looking. He is a dev ops agent for the NumbaOne Webdev squad.",
         },
         {
-          title: "Lazy",
-          description: "Danger 5 meme",
-          img: "images/chuckle.jpeg"
+          image: "assets/images/filora.png",
+          title: "I'm Filora",
+          img: "images/filora.png",
+          account: "https://github.com/aeoyu",
+          description:
+            "I strive for beautiful and functional designs. My current life motto is to learn and explore the possibilities of programming languages. ",
         },
         {
-          title: "To",
-          description: "Danger 5 meme",
-          img: "images/chuckle.jpeg"
+          image: "assets/images/james.png",
+          title: "I'm James",
+          img: "images/james.png",
+          account: "https://github.com/Archangel767",
+          description: "Web dev student by day, confused screaming by night.",
         },
-        {
-          title: "Find",
-          description: "Danger 5 meme",
-          img: "images/chuckle.jpeg"
-        },
-        {
-          title: "Pictures",
-          description: "Danger 5 meme",
-          img: "images/chuckle.jpeg"
-        }
-        
-      ]
-    }
-  }
-}
+      ],
+    };
+  },
+};
 </script>
 
 <style>
-  .grid-box {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;    
-    text-align: center;
-  }
-
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+}
+main {
+  gap: 13px;
+}
+.theones {
+  padding-top: 3rem;
+}
 </style>
